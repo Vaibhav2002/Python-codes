@@ -1,0 +1,7 @@
+a=list(map(int, input().split()))
+a.sort()
+b=list(a[i] for i in range(0,len(a),2))
+c=list(a[i] for i in range(1,len(a),2))
+print(b)
+print(c)
+print(abs(sum(b)-sum(c)))
